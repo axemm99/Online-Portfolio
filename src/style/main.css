@@ -1,0 +1,42 @@
+.carousel .item {
+    height: 100px;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100px;
+}
+
+.container {
+    margin-top: 50px !important;
+}
+
+/*  #card_education {
+    margin-top: 50px;
+}
+
+#card_programming {
+    margin-top: 50px;
+}
+
+#card_frameworks {
+    margin-top: 50px;
+}
+
+#card_programs {
+    margin-top: 50px;
+}
+
+#card_languages {
+    margin-top: 50px;
+}*/
+
+#footer {
+    margin-top: 50px;
+}
+
+#card_projects {
+    margin-top: 50px;
+}

@@ -1,0 +1,10 @@
+
+$theme-colors: (
+  'primary': #8f1f99
+);
+
+:root {
+    --purple: #8f1f99
+}
+
+@import "node_modules/bootstrap/scss/bootstrap";
