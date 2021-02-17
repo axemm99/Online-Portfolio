@@ -14,32 +14,25 @@
 
     <script src="bundle.js"></script>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
+
+    <!-- 'Barlow', sans-serif -->
 </head>
 
 <body>
 
-    <!-- get it here -> •••• -->    
+    <!-- get it here -> •••• -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-        </ol>
-
-        <div class="carousel-inner">
-
-            <div class="carousel-item active">
-                <img src="imgs/whale.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Work Preview</h5>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    <button type="button" class="btn btn-outline-light">Click Here</button>
-                    <button type="button" class="btn btn-primary">Click Here 2</button>
-                </div>
-            </div>
-
-        </div>
-
+    <div class="image">
+        <div id="blackSquare"></div>
+        <img id="picSelf" src="imgs/myself_1.JPG" class="d-block w-100" alt="...">
+    </div>
+    <div class="title_txt">
+        <h2 id="name">Inês Moreira</h2>
     </div>
 
 
@@ -48,57 +41,12 @@
 
         <div class="skill_cards">
 
-            <div id="card_education" class="card" style="width: 82rem;">
+            <div id="card_intro" class="card" style="width: 82rem;">
                 <div class="card-body">
                     <h5 class="card-title">Intoduction</h5>
                     <p id="ed_intro" class="card-text">quick text bout me self</p>
                 </div>
             </div>
-
-            <!--<div id="card_education" class="card" style="width: 82rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Education</h5>
-                    <p id="ed_barchelor" class="card-text"><i class="fas fa-graduation-cap"></i> Barchelor's in
-                        Information
-                        Systems and
-                        Technologies for the Web</p>
-                    <p id="ed_school">Escola Superior de Media Artes e Design (2017/2020)</p>
-                </div>
-            </div>
-
-
-            <div id="card_programming" class="card" style="width: 82rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Programming Languages</h5>
-
-                    <p class="card-text">JavaScript • HTML • CSS • MongoDB</p>
-
-                </div>
-            </div>-->
-
-
-            <!--<div id="card_frameworks" class="card" style="width: 82rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Frameworks</h5>
-                    <p class="card-text">VueJS • NodeJS • Bootstrap</p>
-
-                </div>
-            </div>
-
-
-            <div id="card_programs" class="card" style="width: 82rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Programs</h5>
-                    <p class="card-text">Visual Studio Code Unity</p>
-                </div>
-            </div>
-
-            <div id="card_languages" class="card" style="width: 82rem;">
-                <div class="card-body">
-                    <h5 class="card-title">Languages</h5>
-                    <p class="card-text">English Portuguese</p>
-                </div>
-            </div>-->
 
         </div>
 
@@ -237,35 +185,66 @@
     }
 
     .container {
-        margin-top: 50px !important;
+        margin-top: 1100px !important;
     }
-
-    /*  #card_education {
-        margin-top: 50px;
-    }
-
-    #card_programming {
-        margin-top: 50px;
-    }
-
-    #card_frameworks {
-        margin-top: 50px;
-    }
-
-    #card_programs {
-        margin-top: 50px;
-    }
-
-    #card_languages {
-        margin-top: 50px;
-    }*/
 
     #footer {
-        margin-top: 50px;
+        margin-top: -1000px;
+    }
+
+    .skill_cards {
+        margin-top: 200px;
     }
 
     #card_projects {
         margin-top: 50px;
+    }
+
+    #picSelf {}
+
+    .image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #blackSquare {
+        position: absolute;
+        height: 140.5%;
+        width: 100%;
+        background-color: #67176e;
+        opacity: 70%;
+        border-bottom: 10px solid white;
+    }
+
+    body {
+        background: #2d0a30 !important;
+    }
+
+    #name {
+        color: white;
+        position: relative;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .card-title {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        color: white;
+    }
+
+    #card_intro {
+        background-color: #2d0a30;
+        border: none;
+    }
+
+    #ed_intro {
+        color: white;
+        font-family: 'Barlow', sans-serif;
+        text-align: justify;
+        font-size: 20px;
     }
 </style>
 
