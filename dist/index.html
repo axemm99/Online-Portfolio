@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
     <!-- 'Barlow', sans-serif -->
 </head>
 
@@ -32,7 +35,8 @@
         <img id="picSelf" src="imgs/myself_1.JPG" class="d-block w-100" alt="...">
     </div>
     <div class="title_txt">
-        <h2 id="name">Inês Moreira</h2>
+        <h2 id="portfolioName">Inês Moreira</h2>
+        <p id="subPortefolio">Web Developer</p>
     </div>
 
 
@@ -197,7 +201,7 @@
     }
 
     #card_projects {
-        margin-top: 50px;
+        margin-top: -400px;
     }
 
     #picSelf {}
@@ -223,16 +227,31 @@
         background: #2d0a30 !important;
     }
 
-    #name {
+    #portfolioName {
         color: white;
         position: relative;
         font-family: 'Bebas Neue', cursive;
+        font-size: 100px;
+        margin-top: 370px;
+        text-align: center;
+        letter-spacing: 15px;
+    }
+
+    #subPortefolio {
+        color: white;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        font-size: 50px;
+        margin-top: 10px;
+        text-align: center;
+        
     }
 
     .card-title {
         font-family: 'Bebas Neue', cursive;
         font-size: 40px;
         color: white;
+        margin-top: -550px;
     }
 
     #card_intro {
