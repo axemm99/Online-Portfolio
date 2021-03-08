@@ -60,7 +60,15 @@
     </div>
 
 
-    <div id="line"></div>
+    <!--<div id="line"></div>-->
+
+    <ul>
+        <li class="right"><span>Anecdotes</span></li>
+        <li class="middle"><span>Bachelor's in Information Systems and Technologies for the Web</span></li>
+        <li><span>Mad Summer School</span></li>
+        <li class="middle"><span>Internship with NONIUS Software</span></li>
+        <li class="right"><span>Recent Snaps</span></li>
+    </ul>
 
 
     <!-- Footer -->
@@ -188,12 +196,75 @@
         margin-right: 180px;
     }
 
-    #line {
+    /*#line {
         border-left: 6px solid white;
+        border-radius: 99px;
         height: 500px;
         margin-left: 50%;
         margin-top: -350px;
-    }
+    }*/
+
+
+
+
+
+
+    ul {
+    height:500px;
+    width:500px;
+    margin:0;
+    padding:0;
+    list-style:none;
+    position:relative;
+    overflow:hidden;
+    margin-left: 50%;
+    margin-top: -350px;
+    font-family: 'Barlow', sans-serif;
+}
+ul::before {
+    height:133%;
+    width:133%;
+    border-radius:0%;
+    border:solid 2px white;
+    display:block;
+    position:absolute;
+    top:-18%;
+    left:20px;
+    content:"";
+}
+li {
+    margin:30px 0;
+    color:#8f1f99;
+    font-style:italic;
+    font-weight:bold;
+    overflow:hidden;
+    font-family: 'Barlow', sans-serif;
+}
+li::before {
+    height:45px;
+    width:45px;
+    content:"";
+    display:inline-block;
+    background-color:#8f1f99;
+    border-radius:50%;
+    position:relative;
+    top:4px;
+    margin-right:10px;
+}
+li.right {
+    margin-left:0px;
+}
+li.middle {
+    margin-left:0px;
+}
+li span {
+    position:relative;
+    left:-100%;
+    transition: left 200ms ease-in;
+}
+li:hover span {
+    left:0;
+}
 </style>
 
 </html>
