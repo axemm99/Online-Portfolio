@@ -63,11 +63,11 @@
     <!--<div id="line"></div>-->
 
     <ul>
-        <li class="right"><span>Anecdotes</span></li>
-        <li class="middle"><span>Bachelor's in Information Systems and Technologies for the Web</span></li>
-        <li><span>Mad Summer School</span></li>
-        <li class="middle"><span>Internship with NONIUS Software</span></li>
-        <li class="right"><span>Recent Snaps</span></li>
+        <li class="text"><span>Anecdotes</span></li>
+        <li class="text"><span>Bachelor's in Information Systems and Technologies for the Web</span></li>
+        <li class="text"><span>Mad Summer School</span></li>
+        <li class="text"><span>Internship with NONIUS Software</span></li>
+        <li class="text"><span>Recent Snaps</span></li>
     </ul>
 
 
@@ -233,7 +233,7 @@ ul::before {
     content:"";
 }
 li {
-    margin:30px 0;
+    margin:40px 0;
     color:#8f1f99;
     font-style:italic;
     font-weight:bold;
@@ -251,19 +251,9 @@ li::before {
     top:4px;
     margin-right:10px;
 }
-li.right {
-    margin-left:0px;
-}
-li.middle {
-    margin-left:0px;
-}
-li span {
-    position:relative;
-    left:-100%;
-    transition: left 200ms ease-in;
-}
-li:hover span {
-    left:0;
+
+.text {
+    color: white;
 }
 </style>
 
